@@ -6,7 +6,7 @@
 
 //LET variables are block scoped !!
 //Working with DOM - Document Object Model ( how you use JS to modify the website)
-
+let saveEl = document.getElementById("save-el")
 let CountEl = document.getElementById("count-el") //pass in arguments
 console.log(CountEl)
 
@@ -14,13 +14,23 @@ console.log(CountEl)
 let count = 0
 function increment (){
 
-   count = count+1
+   count +=1
    //set countEl's innertext to the count
    CountEl.innerText = count
 
    console.log(count)
     
 
+
+}
+//create a function  save(), which logs out the count when it is called 
+
+function save (){
+     // 2. Create a variable that contains both the count and the dash separator, i.e. "12 - "
+     let saveCount = "count" + "-"
+    
+         saveEl.innerText =+ saveCount
+    // NB: Make sure to not delete the existing content of the paragraph
 
 }
 
