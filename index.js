@@ -29,8 +29,10 @@ function save (){
      // 2. Create a variable that contains both the count and the dash separator, i.e. "12 - "
      let saveCount = "count" + "-"
     
-         saveEl.innerText =+ saveCount
+         saveEl.textContent =+ saveCount
     // NB: Make sure to not delete the existing content of the paragraph
+    CountEl.textContent = 0
+    count = 0
 
 }
 
